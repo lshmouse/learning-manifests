@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote name="github" fetch="ssh://git@github.com" />
+  <remote name="asf" fetch="https://git-wip-us.apache.org/repos/asf" />
+  <default revision="master" remote="github" sync-j="4" />
+
+  <project path="linux" name="torvalds/linux" remote="github"/>
+
+  <project path="mysql" name="webscalesql/webscalesql-5.6" remote="github"/>
+  <project path="protobuf" name="google/protobuf" remote="github"/>
+  <project path="leveldb" name="google/leveldb" remote="github"/>
+  <project path="rocksdb" name="facebook/rocksdb" remote="github"/>
+  <project path="thrift" name="apache/thrift" remote="github"/>
+
+  <!-- devops-->
+  <project path="phabricator" name="facebook/phabricator" remote="github"/>
+  <project path="salt" name="saltstack/salt" remote="github"/>
+  <project path="sysdig" name="draios/sysdig" remote="github"/>
+
+  <!-- big data -->
+  <project path="jdk/hotspot" name="openjdk-mirror/jdk7u-hotspot" remote="github"/>
+  <project path="zookeeper" name="zookeeper" remote="asf"/>
+  <project path="hadoop" name="hadoop" remote="asf"/>
+  <project path="hbase" name="hbase" remote="asf"/>
+  <project path="cassandra" name="cassandra" remote="asf"/>
+  <project path="spark" name="spark" remote="asf"/>
+  <project path="mesos" name="mesos" remote="asf"/>
+
+  <!-- C++ -->
+  <project path="bazel" name="google/bazel" remote="github"/>
+  <project path="snappy" name="google/snappy" remote="github"/>
+  <project path="glog" name="google/glog" remote="github"/>
+  <project path="gflags" name="google/gflags" remote="github"/>
+
+  <!-- Golang -->
+  <project path="golang" name="google/go" remote="github"/>
+  <project path="raft" name="goraft/raft" remote="github"/>
+  <project path="etcd" name="coreos/etcd" remote="github"/>
+  <project path="docker" name="docker/docker" remote="github"/>
+  <project path="cockroach" name="cockroachdb/cockroach" remote="github"/>
+  <project path="kubernetes" name="GoogleCloudPlatform/kubernetes" remote="github"/>
+
+  <!-- web -->
+  <project path="django" name="django/django" remote="github"/>
+  <project path="bootstrap" name="twbs/bootstrap" remote="github"/>
+
+  <!-- Mobile -->
+</manifest>
